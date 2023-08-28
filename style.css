@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+.platform-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+.single-platform {
+  margin: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: black;
+  background-color: aqua;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.platform-select-heading {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.selected {
+  background-color: green;
+  color: white;
+}
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-btn {
+  background-color: brown;
+  color: white;
+  border-radius: 0.25rem;
+  border: 2px solid blue;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.img {
+  height: 100px;
+  width: 150px;
+}
+.single-contest {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.75rem;
+  flex-wrap: wrap;
+  box-shadow: 5px 10px 25px -8px rgba(33, 28, 33, 1);
+}
+.image-container {
+  border: 4px solid grey;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+.info-container {
+  margin: 1rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+.contest-container {
+  /* margin: 1rem; */
+  padding: 1rem;
+}
