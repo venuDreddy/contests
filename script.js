@@ -29,6 +29,7 @@ const getSites = async (sitesUrl) => {
   const response = await fetch(sitesUrl);
   if (response.ok) {
     const data = await response.json();
+    platformContainer.innerHTML = "";
     data.forEach((platform, index) => {
       if (platform[0] !== "CS Academy" && platform[0] !== "Toph") {
         const element = document.createElement("button");
@@ -45,6 +46,7 @@ const getSites = async (sitesUrl) => {
     submitButtonContainer.appendChild(submitElement);
     submitElement.addEventListener("click", handleContestButton);
   } else {
+    platformContainer.innerHTML = "";
     const element = document.createElement("h2");
     element.innerText = "There was a error while loading platforms.";
     platformContainer.appendChild(element);

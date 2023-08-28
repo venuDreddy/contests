@@ -60,6 +60,7 @@ body {
   align-items: center;
   margin: 0.75rem;
   flex-wrap: wrap;
+  overflow: auto;
   box-shadow: 5px 10px 25px -8px rgba(33, 28, 33, 1);
 }
 .image-container {
@@ -70,10 +71,8 @@ body {
 .info-container {
   margin: 1rem;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
 }
 .contest-container {
-  /* margin: 1rem; */
   padding: 1rem;
 }
