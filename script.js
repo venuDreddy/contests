@@ -157,8 +157,8 @@ const bubbleSort = (array) => {
   for (i = 0; i < array.length - 1; i++) {
     for (j = 0; j < array.length - 1 - i; j++) {
       if (
-        new Date(array[j].startTime).getTime() >
-        new Date(array[j].startTime).getTime()
+        new Date(array[j].start_time).getTime() >
+        new Date(array[j + 1].start_time).getTime()
       ) {
         temp = array[j];
         array[j] = array[j + 1];
